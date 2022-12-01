@@ -96,10 +96,10 @@ creer un fichier **.gitignore** permet en ecrivant le nom du fichier/dossier de 
 
 
 `git log` (consulter l'historique des modification git) **La commande git log supporte également de nombreuses options.** Certaines vont pouvoir être très utiles par exemple les options `-p`, `--pretty`, `--since` ou `--author`.
-Utiliser `git log -p` permet d’afficher explicitement les différences introduites entre chaque validation .L’option `--pretty` permet, avec sa valeur **oneline**, d’afficher chaque commit sur une seule ligne ce qui peut faciliter la lecture dans le cas où de nombreux commits ont été réalisés.
+Utiliser `git log -p` permet d’afficher explicitement les différences introduites entre chaque validation .L’option `--pretty` permet, avec sa valeur **oneline**, d’afficher chaque commit sur une seule ligne ce qui peut faciliter la lecture dans le cas où de nombreux commits ont été réalisés. **source online format pro**
 
 
-L’option `--since` permet de n’afficher que **les modifications depuis une certaine date** (on peut lui fournir différents formats de date comme **2.weeks** ou **2019-10-10** par exemple).
+L’option `--since` permet de n’afficher que **les modifications depuis une certaine date** (on peut lui fournir différents formats de date comme **2.weeks** ou **2019-10-10** par exemple). **source online format pro**
 
 L’option `--author` permet de n’afficher que les commits d’un auteur en particulier.
 
@@ -117,14 +117,13 @@ L’option `--author` permet de n’afficher que les commits d’un auteur en pa
 
 Pour fusionner nos deux branches, on va se placer sur *master* avec une commande `git checkout` puis taper une commande `git merge` avec le nom de la branche qu’on souhaite fusionner avec *master*.
 Dans ce cas, “fusionner” nos deux branches revient finalement à faire avancer *master* au niveau du commit pointé par *test*. C’est exactement ce que fait Git et c’est ce qu’on appelle un “fast forward” (avance rapide).
-Il ne nous reste alors plus qu’à effacer notre branche *test*. On peut faire cela en utilisant la commande `git branch -d`.
+Il ne nous reste alors plus qu’à effacer notre branche *test*. On peut faire cela en utilisant la commande `git branch -d`. **source online format pro**
 
 `git merge nomdelabranche` (fusionner les branches)
 
 `git branch -d nomdelabranche` (supprimer la branche)
 
-Plutôt que d’effectuer une fusion à trois sources, on va pouvoir **rebaser** les modifications validées dans **commitN+1** dans notre branche *master*. On utilise la commande `git rebase` pour récupérer les modifications validées
-sur une branche et les rejouer sur une autre
+Plutôt que d’effectuer une fusion à trois sources, on va pouvoir **rebaser** les modifications validées dans **commitN+1** dans notre branche *master*. On utilise la commande `git rebase` pour récupérer les modifications validées sur une branche et les rejouer sur une autre **source online format pro**
 
 # GIT HUB
 
@@ -132,28 +131,29 @@ Pour **cloner** un dépôt distant, nous allons pouvoir utiliser la commande `gi
 Le nom donné par défaut par Git à un serveur à partir duquel on a effectué un clonage est **origin**.
  On peut également utiliser `git remote -v` pour afficher les URLs stockées
 Pour définir un nom personnalisé pour un dépôt distant, on peut utiliser la commande `git remote add` suivi du nom choisi suivi de l’URL du dépôt.
-Pour renommer ensuite notre référence, on pourra utiliser `git remote rename [ancien-nom] [nouveau-nom]`.
+Pour renommer ensuite notre référence, on pourra utiliser `git remote rename [ancien-nom] [nouveau-nom]`. **source online format pro**
 
 La commande `git fetch [nom-distant]` va nous permettre de récupérer toutes les données d’un dépôt distant qu’on ne possède pas déjà.
-Cela permet de récupérer les ajouts du projet distant et d’avoir une version à jour du projet.
+Cela permet de récupérer les ajouts du projet distant et d’avoir une version à jour du projet. **source online format pro**
 
 Notez que fetch tire les données dans votre **dépôt local** mais sous sa propre branche ce qui signifie que ces données ne sont pas fusionnées avec vos autres travaux et que votre copie de travail n’est pas modifiée. 
-**Il faudra donc fusionner explicitement les données tirées par fetch par la suite**
+**Il faudra donc fusionner explicitement les données tirées par fetch par la suite**  **source online format pro**
 
 on peut également utiliser `git pull` qui va récupérer les données d’une branche distante et les fusionner automatiquement dans notre branche locale
 
 Une fois qu’on a terminé nos modifications localement, on va les pousser vers le dépôt distant. On utilise pour cela la commande `git push [nom-distant] [nom-de-branche]`. 
-Si on souhaite par exemple pousser les modifications faites sur notre branche *master* vers le serveur origin, on écrira `git push origin master`.
+Si on souhaite par exemple pousser les modifications faites sur notre branche *master* vers le serveur origin, on écrira `git push origin master`. **source online format pro**
 
 Pour obtenir des informations sur un dépôt distant, on peut utiliser la commande `git remote show [nom-du-depot]`.
 
 Pour retirer un dépôt distant, on utilisera la commande `git remote rm [nom-du-depot]`.
 
+
 **DEPOT=PROJET** 
 
-Pour copier un dépôt (repository) GitHub sur nos machines, il suffit d’utiliser l’option “clone URL” de GitHub pour récupérer le lien du repo, puis d’utiliser la commande `git clone [URL]` dans notre console
+Pour copier un dépôt (repository) GitHub sur nos machines, il suffit d’utiliser l’option “clone URL” de GitHub pour récupérer le lien du repo, puis d’utiliser la commande `git clone [URL]` dans notre console **source online format pro**
 
-On peut également utiliser l’option “fork” de GitHub. **Un fork est une copie d’un dépôt distant qui nous permet d’effectuer des modifications sans affecter le projet original**.
+On peut également utiliser l’option “fork” de GitHub. **Un fork est une copie d’un dépôt distant qui nous permet d’effectuer des modifications sans affecter le projet original**. **source online format pro**
 
 
 
