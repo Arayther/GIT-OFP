@@ -128,6 +128,9 @@ Plutôt que d’effectuer une fusion à trois sources, on va pouvoir **rebaser**
 # GIT HUB
 
 Pour **cloner** un dépôt distant, nous allons pouvoir utiliser la commande `git clone`. Une fois que vous disposez d’un dépôt distant cloné localement,vous pouvez utiliser la commande `git remote` pour afficher la liste des serveurs distants des dépôts
+
+`git clone [URL] [nomdurepository]` (permet de cloner un depot git hub sur sur un depot (dossier) vierge)
+
 Le nom donné par défaut par Git à un serveur à partir duquel on a effectué un clonage est **origin**.
  On peut également utiliser `git remote -v` pour afficher les URLs stockées
 Pour définir un nom personnalisé pour un dépôt distant, on peut utiliser la commande `git remote add` suivi du nom choisi suivi de l’URL du dépôt.
