@@ -147,8 +147,6 @@ on peut également utiliser `git pull` qui va récupérer les données d’une b
 Une fois qu’on a terminé nos modifications localement, on va les pousser vers le dépôt distant. On utilise pour cela la commande `git push [nom-distant] [nom-de-branche]`. 
 Si on souhaite par exemple pousser les modifications faites sur notre branche *master* vers le serveur origin, on écrira `git push origin master`. **source online format pro**
 
-ex: `git push GIT-OFP master`
-
 Pour obtenir des informations sur un dépôt distant, on peut utiliser la commande `git remote show [nom-du-depot]`.
 
 Pour retirer un dépôt distant, on utilisera la commande `git remote rm [nom-du-depot]`.
