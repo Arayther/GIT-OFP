@@ -177,5 +177,3 @@ On peut également utiliser l’option “fork” de GitHub. **Un fork est une c
 `mkdir nomdudossier` (creer un dossier)
 
 `pwd` (savoir ou l'on ce trouve sur le PC)
-
-Bonjour 
