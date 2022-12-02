@@ -109,6 +109,8 @@ L’option `--author` permet de n’afficher que les commits d’un auteur en pa
 
 `git branch nomvoulu` (creer une nouvelle branche)
 
+`git checkout -b nomdelabranche` (creer une branche et switch(pas la console) directement dessus)
+
 `git checkout nomdelabranche` (basculé sur la branhe voulue)
 
 `git branch -D nomdelabranche` (supprimer la branche)
