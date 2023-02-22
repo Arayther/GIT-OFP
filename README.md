@@ -1,4 +1,4 @@
 # GIT-OFP
 n'hesiter pas a ajouter du contenu
 
-**repository for french beginner in GIT and GIT HUB**
+**repository in french for beginner in GIT and GIT HUB**
